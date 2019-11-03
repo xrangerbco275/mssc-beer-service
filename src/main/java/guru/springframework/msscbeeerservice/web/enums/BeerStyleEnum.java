@@ -1,4 +1,4 @@
-package guru.springframework.msscbeeerservice.web.model.enums;
+package guru.springframework.msscbeeerservice.web.enums;
 
 public enum BeerStyleEnum
 {
