@@ -1,4 +1,4 @@
-package guru.springframework.msscbeeerservice.web.model;
+package guru.springframework.msscbeerservice.web.model;
 
 
 import org.springframework.data.domain.PageImpl;
