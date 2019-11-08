@@ -16,7 +16,6 @@ import java.math.BigDecimal;
 import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.ArgumentMatchers.anyBoolean;
 import static org.mockito.BDDMockito.given;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -80,7 +79,7 @@ class BeerControllerTest
                 .beerName("My Beer")
                 .beerStyle(BeerStyleEnum.ALE)
                 .price(new BigDecimal("2.99"))
-                .upc(BeerLoader.BEER_1_UPC)
+                .upc(Long.valueOf(BeerLoader.BEER_1_UPC))
                 .build();
     }
 }
