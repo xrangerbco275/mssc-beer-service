@@ -78,7 +78,8 @@ class BeerControllerTest
                                 fields.withPath("upc").description("UPC of beer"),
                                 fields.withPath("price").description("Price"),
                                 fields.withPath("quantityOnHand").description("Quantity on hand"),
-                                fields.withPath("minOnHand").description("Minimum on hand")
+                                fields.withPath("minOnHand").description("Minimum on hand"),
+                                fields.withPath("myDate").ignored()
                         )));
 
     }
@@ -109,7 +110,8 @@ class BeerControllerTest
                                 fields.withPath("upc").description("UPC of beer").attributes(),
                                 fields.withPath("price").description("Beer Price"),
                                 fields.withPath("quantityOnHand").ignored(),
-                                fields.withPath("minOnHand").ignored()
+                                fields.withPath("minOnHand").ignored(),
+                                fields.withPath("myDate").ignored()
                         )));
     }
 
