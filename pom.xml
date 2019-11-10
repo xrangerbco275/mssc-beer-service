@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>guru.springframework</groupId>
-    <artifactId>mssc-beeer-service</artifactId>
+    <artifactId>mssc-beer-service</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>mssc-beeer-service</name>
+    <name>mssc-beer-service</name>
     <description>Demo project for Spring Boot</description>
 
 
