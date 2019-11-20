@@ -9,11 +9,8 @@ import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
-/**
- * Created by jt on 2019-05-17.
- */
 @RequiredArgsConstructor
-@Component
+//@Component
 public class BeerLoader implements CommandLineRunner
 {
 
@@ -24,8 +21,9 @@ public class BeerLoader implements CommandLineRunner
     private final BeerRepository beerRepository;
 
     @Override
-    public void run(String... args)
+    public void run(String... args) throws Exception
     {
+
         if (beerRepository.count() == 0)
         {
             loadBeerObjects();

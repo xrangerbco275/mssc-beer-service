@@ -1,23 +1,23 @@
 package guru.springframework.msscbeerservice.web.model;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.validation.constraints.NotBlank;
-import javax.validation.constraints.Size;
+import java.time.OffsetDateTime;
 import java.util.UUID;
 
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Data
 @Builder
-public class CustomerDto
+public class BeerInventoryDto
 {
     private UUID id;
-
-    @NotBlank
-    @Size(min = 3, max = 100)
-    private String customerName;
+    private OffsetDateTime createdDate;
+    private OffsetDateTime lastModifiedDate;
+    private UUID beerId;
+    private Integer quantityOnHand;
 }

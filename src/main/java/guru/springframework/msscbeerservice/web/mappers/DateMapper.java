@@ -6,13 +6,10 @@ import java.sql.Timestamp;
 import java.time.OffsetDateTime;
 import java.time.ZoneOffset;
 
-/**
- * Created by jt on 2019-05-25.
- */
 @Component
 public class DateMapper
 {
-    private OffsetDateTime asOffsetDateTime(Timestamp ts)
+    public OffsetDateTime asOffsetDateTime(Timestamp ts)
     {
         if (ts != null)
         {
@@ -25,7 +22,7 @@ public class DateMapper
         }
     }
 
-    private Timestamp asTimestamp(OffsetDateTime offsetDateTime)
+    public Timestamp asTimestamp(OffsetDateTime offsetDateTime)
     {
         if (offsetDateTime != null)
         {

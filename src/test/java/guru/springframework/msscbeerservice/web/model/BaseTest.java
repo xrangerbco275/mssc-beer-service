@@ -25,7 +25,6 @@ public class BaseTest
                 .lastModifiedDate(OffsetDateTime.now())
                 .price(new BigDecimal(12.99))
                 .upc(BeerLoader.BEER_1_UPC)
-                .myDate(LocalDate.now())
                 .build();
     }
 }
